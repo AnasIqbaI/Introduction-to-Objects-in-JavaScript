@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>Objects in Javascript</h1>
+    <p id="demo"></p>
+    <p id="result"></p>
+    <script type="text/javascript">
+        var Supercar = {
+            Name: "BMW",
+            Model: "M3 Performance",
+            Speed: 500,
+            Color: "Matte Black"
+        };
+
+        document.getElementById("demo").innerHTML =
+            Supercar.Name + "  " + Supercar.Model + " has "  + "Speed of " + Supercar.Speed + " km/h" + " and is " + Supercar.Color + " in color.";
+   
+        document.write(" Test Value =  " + Math.acos(-1));
+        document.write("<br>");
+        document.write(" Test Value = " + Math.asin(1));
+
+   
+        function findMax() {
+            var max = 0;
+            for (i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        document.getElementById("result").innerHTML = findMax(1, 2, 3, 4, 5);
+        
+    </script>
+</body>
+</html>
